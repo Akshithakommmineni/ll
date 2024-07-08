@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <script type="text/javascript" defer src="hideAPI.js"></script>
+        <script type="text/javascript" defer src="index.js"></script>
+        <title>Farmers Market Seasonal Recipes</title>
+    </head>
+
+    <body>
+        <h1>Farmers Market Seasonal Recipes</h1>
+
+        <h4 id="page-description">Click a season name to show or hide ten seasonal produce items. <br>
+            Then, click one of those produce items to populate the search bar.<br>Finally, click the "Find recipes" button to see what you can make with your selection!</h4>
+
+        <section id="seasons" class="wrapper">
+            <div id="spring" class="season">
+            <h2 class="season-heading">Spring</h2>
+                <ul class="produce-list" hidden>
+                    <li>Asparagus</li>
+                    <li>Broccoli</li>
+                    <li>Cabbage</li>
+                    <li>Lettuce</li>
+                    <li>Mushrooms</li>
+                    <li>Peas</li>
+                    <li>Radishes</li>
+                    <li>Rhubarb</li>
+                    <li>Spinach</li>
+                    <li>Strawberries</li>
+                </ul>
+            </div>
+
+            <div id="summer" class="season">
+            <h2 class="season-heading">Summer</h2>
+                <ul class="produce-list" hidden>
+                    <li>Bell Pepper</li>
+                    <li>Blackberries</li>
+                    <li>Blueberries</li>
+                    <li>Cherries</li>
+                    <li>Honeydew Melon</li>
+                    <li>Peaches</li>
+                    <li>Plums</li>
+                    <li>Tomatoes</li>
+                    <li>Watermelon</li>
+                    <li>Zucchini</li>
+                </ul>
+            </div>
+       
+            <div id="fall" class="season">
+            <h2 class="season-heading">Fall</h2>
+                <ul class="produce-list" hidden>
+                    <li>Apples</li>
+                    <li>Cauliflower</li>
+                    <li>Cranberries</li>
+                    <li>Ginger</li>
+                    <li>Grapes</li>
+                    <li>Mangos</li>
+                    <li>Mushrooms</li>
+                    <li>Pumpkin</li>
+                    <li>Radishes</li>
+                    <li>Sweet Potatoes</li>
+                </ul>
+            </div>
+        
+            <div id="winter" class="season">
+            <h2 class="season-heading">Winter</h2>
+                <ul class="produce-list" hidden>
+                    <li>Beets</li>
+                    <li>Brussels Sprouts</li>
+                    <li>Collard Greens</li>
+                    <li>Grapefruit</li>
+                    <li>Kale</li>
+                    <li>Leeks</li>
+                    <li>Oranges</li>
+                    <li>Potatoes</li>
+                    <li>Winter Squash</li>
+                    <li>Yams</li>
+                </ul>
+            </div>
+
+        </section>
+        
+        <form id="search-form">
+            <label>What can you make with what's in season?</label>
+            <br>
+            <br>
+            <input type="text" name="produce-item" id="search-form-input"/>
+            <input type="submit" id="submit-button" value="Find recipes"/>
+        </form>
+
+        <div id="recipes">
+            <h2 id="recipe-header">Seasonal recipes based on your selection:</h2>
+            <div id="returned-recipes"></div>
+            <br>
+            <br>
+        </div>
+    </body>
+</html>
